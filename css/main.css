@@ -147,6 +147,10 @@ img {
 }
 /* hero-styles */
 
+.daily {
+  padding-top: 68px;
+}
+
 .daily__list {
   display: flex;
   justify-content: space-between;
