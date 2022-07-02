@@ -1,0 +1,304 @@
+/* general-styles */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-v30-latin-700.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* /general-styles */
+
+/* header-styles */
+.site-header {
+  padding: 30px 0;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+}
+
+.site-header__navbar {
+  margin-left: auto;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar__item + .navbar__item {
+  margin-left: 30px;
+}
+
+.navbar__item--active {
+  margin-left: 40px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+}
+
+.navbar__link--active {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333333;
+  transform: rotate(0.16deg);
+}
+
+/* /header-styles */
+
+/* hero-styles */
+.hero {
+  padding: 180px 0 185px;
+  background-image: url("../images/watches.png");
+  background-repeat: no-repeat;
+  background-size: 587px 565px;
+  background-position: calc(50% + 650px);
+  border-bottom: 2px solid #dddddd;
+}
+
+.hero__content--wrapper {
+  width: 450px;
+}
+
+.hero__title {
+  margin-left: -120px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+
+.hero__text {
+  margin-bottom: 30px;
+  padding-left: 40px;
+  border-left: 1px solid;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+}
+
+.hero__link {
+  display: inline-block;
+  padding: 12px 39px;
+  background-color: #ea625c;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* hero-styles */
+
+.daily__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.daily__item {
+  list-style-type: none;
+}
+
+.daily__text {
+  width: 290px;
+}
+
+.daily__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.daily__text__inner {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.daily_dashed {
+  display: flex;
+}
+
+.daily__dash {
+  margin-right: 10px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #dddddd;
+}
+
+.daily__link__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.daily__line {
+  margin-right: 10px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 3px solid #ea625c;
+}
+
+.daily__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #ea625c;
+  order: 1;
+}
+
+.Nike {
+  margin: 164px 0 70px;
+}
+
+.nike__inner {
+  display: flex;
+}
+
+.nike__box {
+  width: 405px;
+  margin-right: 250px;
+}
+
+.nike__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.nike__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+  padding-left: 40px;
+  border-left: 2px solid #888888;
+  margin-bottom: 30px;
+}
+
+.nike__link {
+  padding: 12px 90px;
+  background: #ea625c;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nike__cont {
+  margin-top: -86px;
+}
+
+.footer {
+  padding: 240px 0;
+  background-image: url(../images/runners\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__inner {
+  width: 490px;
+  margin-left: auto;
+}
+
+.fotter__tittle {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.footer-text__content {
+  border-left: 2px solid #fff;
+  padding-left: 40px;
+}
+
+.footer__text {
+  margin-bottom: 30px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.footer__link {
+  display: inline-block;
+  padding: 12px 46px;
+  background: #ea625c;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
